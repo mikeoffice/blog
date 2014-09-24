@@ -37,7 +37,8 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
-      dist: ['dist', 'docs/dist']
+      dist: ['dist', 'docs/dist'],
+      compile: ['dist', '../../static/compile']
     },
 
     jshint: {
@@ -241,13 +242,19 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>-theme.min.css': 'dist/css/<%= pkg.name %>-theme.css'
         }
       },
-      docs: {
+      admin: {
+	src: [
+	  'src/css/bootstrap-admin-theme.css',    
+	],
+	dest: 'dist/css/bootstrap-admin-theme.min.css'
+      },
+      /* docs: {
         src: [
           'docs/assets/css/_src/docs.css',
           'docs/assets/css/_src/pygments-manni.css'
         ],
         dest: 'docs/assets/css/docs.min.css'
-      }
+      } */
     },
 
     usebanner: {
