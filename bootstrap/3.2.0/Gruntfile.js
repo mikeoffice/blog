@@ -122,6 +122,10 @@ module.exports = function (grunt) {
         src: 'src/js/jquery-1.11.1.js',
         dest: 'dist/js/jquery-1.11.1.min.js'
       },
+      formsubmit: {
+        src: 'src/js/bootstrap_submit.js',
+        dest: 'dist/js/bootstrap_submit.min.js'
+      },
       jqueryform: {
         src: 'src/js/jquery.form-3.51.10.js',
         dest: 'dist/js/jquery.form-3.51.10.min.js'
