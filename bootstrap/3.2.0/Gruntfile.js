@@ -118,6 +118,10 @@ module.exports = function (grunt) {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
+      jquery: {
+        src: 'src/js/jquery-1.11.1.js',
+        dest: 'dist/js/jquery-1.11.1.min.js'
+      },
       customize: {
         src: [
           'docs/assets/js/_vendor/less.min.js',
@@ -243,18 +247,9 @@ module.exports = function (grunt) {
         }
       },
       admin: {
-	src: [
-	  'src/css/bootstrap-admin-theme.css',    
-	],
-	dest: 'dist/css/bootstrap-admin-theme.min.css'
-      },
-      /* docs: {
-        src: [
-          'docs/assets/css/_src/docs.css',
-          'docs/assets/css/_src/pygments-manni.css'
-        ],
-        dest: 'docs/assets/css/docs.min.css'
-      } */
+        src: ['src/css/bootstrap-admin-theme.css'],
+        dest: 'dist/css/bootstrap-admin-theme.min.css'
+      }
     },
 
     usebanner: {
