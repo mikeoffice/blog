@@ -38,7 +38,7 @@ module.exports = function (grunt) {
     // Task configuration.
     clean: {
       dist: ['dist', 'docs/dist'],
-      compile: ['dist', '../../static/compile']
+      compile: ['dist', '../../web/static/compile']
     },
 
     jshint: {
@@ -129,6 +129,14 @@ module.exports = function (grunt) {
       jqueryform: {
         src: 'src/js/jquery.form-3.51.10.js',
         dest: 'dist/js/jquery.form-3.51.10.min.js'
+      },
+      jquerypin: {
+        src: 'src/js/jquery.pin.js',
+        dest: 'dist/js/jquery.pin.min.js'
+      },
+      jqueryunslider: {
+        src: 'src/js/jquery.unslider.js',
+        dest: 'dist/js/jquery.unslider.min.js'
       },
       customize: {
         src: [
@@ -257,6 +265,10 @@ module.exports = function (grunt) {
       admin: {
         src: ['src/css/bootstrap-admin-theme.css'],
         dest: 'dist/css/bootstrap-admin-theme.min.css'
+      },
+      slider: {
+        src: ['src/css/slider.css'],
+        dest: 'dist/css/slider.min.css'
       }
     },
 
@@ -307,7 +319,7 @@ module.exports = function (grunt) {
           'css/*.map',
           'fonts/*'
         ],
-        dest: '../../static/compile/'
+        dest: '../../web/static/compile/'
       }
     },
 

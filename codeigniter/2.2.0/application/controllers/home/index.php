@@ -23,7 +23,7 @@ class Index extends CI_Controller{
 	
 	function index()
 	{
-	   die('j');
+	    $this->load->view('home/index');
 	}
 	// --------------------------------------------------------------------
 }

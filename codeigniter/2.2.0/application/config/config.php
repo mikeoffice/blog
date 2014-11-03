@@ -14,7 +14,10 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://www.blog.com';
+$config['static_url']	= 'http://static.blog.com/';
+
+$config['res_version'] = '1';
 
 /*
 |--------------------------------------------------------------------------
@@ -70,7 +73,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'chinese';
 
 /*
 |--------------------------------------------------------------------------
