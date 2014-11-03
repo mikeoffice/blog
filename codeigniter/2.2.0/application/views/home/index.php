@@ -119,45 +119,49 @@
         </header>
         <!-- HEADER 结束 -->
     
-        <!-- 幻灯片开始 -->        
-        <div class="banner">
-        	<ul>
-				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/sunset.jpg');">
-					<div class="inner">
-						<h1>The jQuery slider that just slides.</h1>
-						<p>就是这个不到3kb的插件！没有奇特的特效或无用的标签。</p>
-
-						<a class="btn" href="#download">下载</a>
-					</div>
-				</li>
-
-				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/wood.jpg');">
-					<div class="inner">
-						<h1>Fluid, flexible, fantastically minimal.</h1>
-						<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
-
-						<a class="btn" href="#download">下载</a>
-					</div>
-				</li>
-
-				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/subway.jpg');">
-					<div class="inner">
-						<h1>开源</h1>
-						<p>Unslider的所有源码都托管在GitHub上。</p>
-
-						<a class="btn" href="//github.com/idiot/unslider">参与</a>
-					</div>
-				</li>
-
-				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/shop.jpg');">
-					<div class="inner">
-						<h1>Uh, that’s about it.</h1>
-						<p>I just wanted to show you another slide.</p>
-
-						<a class="btn" href="#download">下载</a>
-					</div>
-				</li>
-			</ul>
+        <!-- 幻灯片开始 -->  
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 banner" style="padding: 0;">
+                	<ul>
+        				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/sunset.jpg');">
+        					<div class="inner">
+        						<h1>The jQuery slider that just slides.</h1>
+        						<p>就是这个不到3kb的插件！没有奇特的特效或无用的标签。</p>
+        
+        						<a class="btn" href="#download">下载</a>
+        					</div>
+        				</li>
+        
+        				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/wood.jpg');">
+        					<div class="inner">
+        						<h1>Fluid, flexible, fantastically minimal.</h1>
+        						<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
+        
+        						<a class="btn" href="#download">下载</a>
+        					</div>
+        				</li>
+        
+        				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/subway.jpg');">
+        					<div class="inner">
+        						<h1>开源</h1>
+        						<p>Unslider的所有源码都托管在GitHub上。</p>
+        
+        						<a class="btn" href="//github.com/idiot/unslider">参与</a>
+        					</div>
+        				</li>
+        
+        				<li style="background-image: url('http://www.bootcss.com/p/unslider/img/shop.jpg');">
+        					<div class="inner">
+        						<h1>Uh, that’s about it.</h1>
+        						<p>I just wanted to show you another slide.</p>
+        
+        						<a class="btn" href="#download">下载</a>
+        					</div>
+        				</li>
+        			</ul>
+                </div>
+            </div>
         </div>
         <!-- 幻灯片结束 -->
     
@@ -348,7 +352,7 @@ $(function(){
     
 
 	$('.banner').unslider({
-		arrows: true,
+		// arrows: true,
 		fluid: true,
 		dots: true
 	});
